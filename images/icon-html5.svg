@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="icon-html5" transform="translate(2.961 1)">
+    <rect id="Rectangle_1821" data-name="Rectangle 1821" width="34" height="34" transform="translate(-2.961 -1)" fill="red" opacity="0"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="20.709" height="23.668" transform="translate(3.087 4.379)" fill="#fff"/>
+    <path id="Path_88" data-name="Path 88" d="M7028.319,2643.8l-4.413-1.2.229,1.425,4.475,1,.659-1Z" transform="translate(-7014.191 -2621.596)" fill="#fff"/>
+    <path id="html5-plain" d="M9.032,2,11.6,30.812,23.144,34l11.572-3.184L37.29,2ZM31.941,8.822l-.161,1.843-.071.845H18.172l.323,3.6H31.387L31.3,16l-.831,9.284-.061.583L23.161,27.86h0l-.009,0L15.91,25.958l-.492-5.451h3.551l.252,2.807,3.929,1.049h.011v-.14l3.947-1,.412-4.518H15.26l-.87-9.8-.085-1h17.72l-.085.91Z" transform="translate(-9.032 -2)" fill="#e44d26"/>
+  </g>
+</svg>

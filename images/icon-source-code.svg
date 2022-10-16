@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="icon-source-code" transform="translate(-7206 -2477)">
+    <rect id="Rectangle_1828" data-name="Rectangle 1828" width="34" height="34" transform="translate(7206 2477)" fill="red" opacity="0"/>
+    <rect id="Rectangle_1829" data-name="Rectangle 1829" width="34" height="29" transform="translate(7206 2480)" fill="#802424" opacity="0"/>
+    <g id="code-working-sharp" transform="translate(7207 2485)">
+      <ellipse id="Ellipse_22" data-name="Ellipse 22" cx="1.938" cy="1.938" rx="1.938" ry="1.938" transform="translate(14.061 6.915)"/>
+      <ellipse id="Ellipse_23" data-name="Ellipse 23" cx="1.938" cy="1.938" rx="1.938" ry="1.938" transform="translate(19.688 6.915)"/>
+      <ellipse id="Ellipse_24" data-name="Ellipse 24" cx="1.938" cy="1.938" rx="1.938" ry="1.938" transform="translate(8.434 6.915)"/>
+      <path id="Path_26" data-name="Path 26" d="M10.222,132.106.1,123.253,10.222,114.4l1.726,1.976-7.859,6.877,7.859,6.877Z" transform="translate(-0.1 -114.4)"/>
+      <path id="Path_27" data-name="Path 27" d="M324.126,132.106l-1.726-1.976,7.859-6.877-7.859-6.877,1.726-1.976,10.122,8.853Z" transform="translate(-302.249 -114.4)"/>
+    </g>
+  </g>
+</svg>
