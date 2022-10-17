@@ -28,6 +28,7 @@ html {
 }
 .wrap__viewport {
   width: 192rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 120em) {
   .wrap__viewport {
@@ -38,6 +39,7 @@ html {
   position: relative;
   max-width: 140rem;
   margin: 0 auto;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 87.5em) {
   .wrap__content {
@@ -54,6 +56,7 @@ html {
 }
 .content__projects-wrap {
   padding: 4rem 2rem 7rem 2rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 53.75em) {
   .content__projects-wrap {
@@ -129,6 +132,7 @@ html {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 2rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 53.75em) {
   .content__projects-items-primary-box {
@@ -140,6 +144,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
   margin-top: 2rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 59.375em) {
   .content__projects-items-secondary-box {
@@ -164,6 +169,7 @@ html {
 .content__projects-heading-wrap {
   width: 52rem;
   text-align: center;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 41.25em) {
   .content__projects-heading-wrap {
@@ -183,11 +189,6 @@ html {
   position: fixed;
   top: 0;
   z-index: 1500;
-}
-.content__profile-as-dropdown {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 .content__profile-wrap {
   position: absolute;
@@ -209,6 +210,14 @@ html {
   padding: 0;
   height: 0;
 }
+.content__profile-full-name .heading-2 {
+  transition: all 0.5s;
+}
+@media only screen and (max-height: 40em) {
+  .content__profile-full-name .heading-2 {
+    font-size: 2rem;
+  }
+}
 .content__profile-image {
   width: 100%;
   display: flex;
@@ -218,17 +227,52 @@ html {
   border-radius: 50%;
   display: block;
   width: 12.8rem;
+  transition: all 0.5s;
+}
+@media only screen and (max-height: 43.75em) {
+  .content__profile-image-avatar {
+    width: 10.8rem;
+  }
+}
+@media only screen and (max-height: 42.5em) {
+  .content__profile-image-avatar {
+    width: 8.8rem;
+  }
+}
+@media only screen and (max-height: 40em) {
+  .content__profile-image-avatar {
+    width: 6.8rem;
+  }
+}
+.content__profile-job-position .subheading-1 {
+  font-size: 1.6rem;
 }
 .content__profile-blurb {
   text-align: center;
   width: 80%;
   margin-top: 2rem;
 }
+.content__profile-blurb p {
+  transition: all 0.5s;
+}
+@media only screen and (max-height: 40em) {
+  .content__profile-blurb p {
+    font-size: 1.4rem;
+  }
+}
 .content__profile-web-technologies, .content__profile-tools-and-apps {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+}
+.content__profile-web-technologies .heading-2, .content__profile-tools-and-apps .heading-2 {
+  transition: all 0.5s;
+}
+@media only screen and (max-height: 40em) {
+  .content__profile-web-technologies .heading-2, .content__profile-tools-and-apps .heading-2 {
+    font-size: 2rem;
+  }
 }
 .content__profile-buttons {
   margin-top: 2rem;
@@ -281,6 +325,15 @@ html {
   width: 4.2rem;
 }
 
+.icon-grouped__item img {
+  transition: all 0.5s;
+}
+@media only screen and (max-height: 42.5em) {
+  .icon-grouped__item img {
+    width: 3rem;
+  }
+}
+
 @font-face {
   font-family: "Roboto Slab Bold";
   src: url("../fonts/Roboto-Slab-Bold.eot");
@@ -307,6 +360,7 @@ html {
   font-size: 2.4rem;
   color: #ffffff;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .heading-1 {
@@ -319,6 +373,7 @@ html {
   font-size: 2.2rem;
   color: #ffffff;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .heading-2 {
@@ -331,6 +386,7 @@ html {
   font-size: 1.2rem;
   color: #466592;
   text-transform: capitalize;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .heading-3 {
@@ -344,6 +400,7 @@ html {
   color: #AEAEAE;
   text-transform: capitalize;
   font-style: italic;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .subheading-1 {
@@ -355,6 +412,7 @@ html {
   font-family: "Roboto Slab Bold", sans-serif;
   font-size: 1.2rem;
   text-transform: capitalize;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .heading-stylized-1 {
@@ -381,6 +439,7 @@ html {
   font-family: "Segoe UI", sans-serif;
   font-size: 1.4rem;
   color: #ffffff;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .paragraph-1 {
@@ -392,6 +451,7 @@ html {
   font-family: "Segoe UI", sans-serif;
   font-size: 1.2rem;
   color: #AEAEAE;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .paragraph-2 {
@@ -407,6 +467,7 @@ html {
   font-family: "Segoe UI", sans-serif;
   font-size: 1.6rem;
   color: #6990C9;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .paragraph-3 {
@@ -418,6 +479,7 @@ html {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1 {
@@ -427,6 +489,7 @@ html {
 .card-1__blurb {
   height: 15rem;
   margin-top: 2rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1__blurb {
@@ -436,6 +499,7 @@ html {
 .card-1__area-1 {
   position: relative;
   width: 42%;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1__area-1 {
@@ -466,6 +530,7 @@ html {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(-100deg, #ffffff 0%, #ffffff 26%, transparent 0%);
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1__area-1::after {
@@ -474,6 +539,7 @@ html {
 }
 .card-1__area-2 {
   width: 58%;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1__area-2 {
@@ -482,12 +548,16 @@ html {
 }
 .card-1__area-2-wrap {
   margin: 2rem 2rem 2rem 0;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.25em) {
   .card-1__area-2-wrap {
     margin: 0 2rem 2rem 2rem;
   }
 }
+.card-1__area-2 .heading-stylized-1 {
+  transition: all 0.5s;
+}
 @media only screen and (max-width: 53.75em) {
   .card-1__area-2 .heading-stylized-1 {
     font-size: 1.4rem;
@@ -503,6 +573,9 @@ html {
     font-size: 1.2rem;
   }
 }
+.card-1__area-2 .paragraph-2 {
+  transition: all 0.5s;
+}
 @media only screen and (max-width: 53.75em) {
   .card-1__area-2 .paragraph-2 {
     font-size: 1.4rem;
@@ -517,6 +590,9 @@ html {
   .card-1__area-2 .paragraph-2 {
     font-size: 1.2rem;
   }
+}
+.card-1__area-2 .content__projects-items-icons-icon img {
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 53.75em) {
   .card-1__area-2 .content__projects-items-icons-icon img {
@@ -544,6 +620,7 @@ html {
 
 .card-2 {
   background-color: #ffffff;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.875em) {
   .card-2 {
@@ -554,6 +631,7 @@ html {
 .card-2__area-1 {
   position: relative;
   height: 12.6rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .card-2__area-1 {
@@ -583,11 +661,15 @@ html {
 }
 .card-2__area-2 {
   padding: 2rem 1.5rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 36.875em) {
   .card-2__area-2 {
     width: 60%;
   }
+}
+.card-2__area-2-heading .heading-3 {
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 62.5em) {
   .card-2__area-2-heading .heading-3 {
@@ -603,6 +685,7 @@ html {
 .card-2__blurb {
   margin-top: 1rem;
   height: 12rem;
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 59.375em) {
   .card-2__blurb {
@@ -628,6 +711,9 @@ html {
   .card-2__blurb {
     height: 16rem;
   }
+}
+.card-2__blurb .paragraph-2 {
+  transition: all 0.5s;
 }
 @media only screen and (max-width: 59.375em) {
   .card-2__blurb .paragraph-2 {
@@ -667,6 +753,10 @@ html {
 }
 .button-1__text:hover {
   cursor: pointer;
+}
+.button-1__text-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 .button-1::after {
   content: "";
@@ -797,7 +887,7 @@ html {
   margin-top: 5rem;
 }
 .contact-form__wrap-hide {
-  margin-top: -50rem;
+  margin-top: -55rem;
 }
 .contact-form__heading {
   margin-bottom: 2rem;

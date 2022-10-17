@@ -11,6 +11,7 @@
     &__viewport {
         width: variables.$viewport-width;
         //background-color: aqua;
+        transition: variables.$transition-all-slowest;
         @include mixins.mediaQueryWidth(viewportWidth1920) {
             width: 100%;
         }
@@ -20,6 +21,7 @@
         max-width:  variables.$content-width;
         margin: 0 auto;
         //background-color: tan;
+        transition: variables.$transition-all-slowest;
         @include mixins.mediaQueryWidth(viewportWidth1400) {
             width: 100%;
         }
@@ -37,6 +39,7 @@
         &-wrap {
             // width: 104rem; // Controlled in JS.
             padding: 4rem 2rem 7rem 2rem;
+            transition: variables.$transition-all-slowest;
             @include mixins.mediaQueryWidth(viewportWidth860) {
                 padding: 4rem 10rem 7rem 10rem;
             }
@@ -107,6 +110,7 @@
             display: grid;
             grid-template-columns: 2fr 2fr;
             grid-gap: 2rem;
+            transition: variables.$transition-all-slowest;
             @include mixins.mediaQueryWidth(viewportWidth860) {
                 grid-template-columns: 1fr;
             }
@@ -116,6 +120,7 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 2rem;
             margin-top: 2rem;
+            transition: variables.$transition-all-slowest;
             @include mixins.mediaQueryWidth(viewportWidth950) {
                 grid-template-columns: 2fr 2fr;
             }
@@ -137,6 +142,7 @@
         &-wrap {
             width: 52rem;
             text-align: center;
+            transition: variables.$transition-all-slowest;
             @include mixins.mediaQueryWidth(viewportWidth660) {
                 width: 100%;
                 padding: 0 4rem;
@@ -155,12 +161,7 @@
             position: fixed;
             top: 0;
             z-index: 1500;
-        }
-        &-as-dropdown {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }               
+        }             
         // width: variables.$content-width; // Controlled in JS.
         &-wrap {
             position: absolute;
@@ -183,6 +184,14 @@
                 }                
             }            
         }
+        &-full-name {
+            & .heading-2 {
+                transition: variables.$transition-all-slowest;
+                @include mixins.mediaQueryHeight(viewportHeight640) {
+                    font-size: 2rem;
+                }
+            }            
+        }
         &-image {
             width: 100%;
             display: flex;
@@ -191,18 +200,45 @@
                 border-radius: 50%;
                 display: block;
                 width: 12.8rem;
+                transition: variables.$transition-all-slowest;
+                @include mixins.mediaQueryHeight(viewportHeight700) {
+                    width: 10.8rem;
+                }
+                @include mixins.mediaQueryHeight(viewportHeight680) {
+                    width: 8.8rem;
+                }
+                @include mixins.mediaQueryHeight(viewportHeight640) {
+                    width: 6.8rem;
+                }
+            }
+        }
+        &-job-position {
+            & .subheading-1 {
+                font-size: 1.6rem;
             }
         }
         &-blurb {
             text-align: center;
             width: 80%;
             margin-top: 2rem;
+            & p {
+                transition: variables.$transition-all-slowest;
+                @include mixins.mediaQueryHeight(viewportHeight640) {
+                    font-size: 1.4rem;
+                }
+            }
         }
         &-web-technologies, &-tools-and-apps {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 2rem;
+            & .heading-2 {
+                transition: variables.$transition-all-slowest;
+                @include mixins.mediaQueryHeight(viewportHeight640) {
+                    font-size: 2rem;
+                }
+            }
         }
         &-buttons {
             margin-top: 2rem;
@@ -259,5 +295,16 @@
                 width: 4.2rem;
             }            
         }        
+    }
+}
+
+.icon-grouped {
+    &__item {
+        & img {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryHeight(viewportHeight680) {
+                width: 3rem;
+            }         
+        }
     }
 }
