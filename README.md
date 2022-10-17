@@ -23,3 +23,6 @@ Live Site URL: [Live Demo](https://kennyestrellaworks-personal-website.netlify.a
 
 ###  Used tools
 <img width="22px" src="xd-plain.svg">
+
+### Oct 18 2022
+Added Profile section height media query.
