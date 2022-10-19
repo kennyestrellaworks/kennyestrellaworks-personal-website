@@ -1,6 +1,37 @@
 // viewportWidth media quiries.
 // 1em = 16px assuming 16 is the font-size of the browser.
 @mixin mediaQueryHeight($viewportHeight) {
+    // 500px to 600px *************
+    @if $viewportHeight == viewportHeight500 { // 500px / 16px = 31.25em
+        @media only screen and (max-Height: 31.25em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight510 { // 510px / 16px = 31.875em
+        @media only screen and (max-Height: 31.875em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight520 { // 520px / 16px = 32.5em
+        @media only screen and (max-Height: 32.5em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight530 { // 530px / 16px = 33.125em
+        @media only screen and (max-Height: 33.125em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight540 { // 540px / 16px = 33.75em
+        @media only screen and (max-Height: 33.75em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight550 { // 550px / 16px = 34.375em
+        @media only screen and (max-Height: 34.375em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight560 { // 560px / 16px = 35em
+        @media only screen and (max-Height: 35em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight570 { // 570px / 16px = 35.625em
+        @media only screen and (max-Height: 35.625em) { @content; }
+    }    
+    @if $viewportHeight == viewportHeight580 { // 580px / 16px = 36.25em
+        @media only screen and (max-Height: 36.25em) { @content; }
+    }
+    @if $viewportHeight == viewportHeight590 { // 590px / 16px = 36.875em
+        @media only screen and (max-Height: 36.875em) { @content; }
+    }
     // 600px to 700px *************
     @if $viewportHeight == viewportHeight600 { // 600px / 16px = 37.5em
         @media only screen and (max-height: 37.5em) { @content; }

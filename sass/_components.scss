@@ -496,6 +496,9 @@
         transition: variables.$transition-all-slowest;
         &-default {
             margin-top: 5rem;
+            @include mixins.mediaQueryHeight(viewportHeight560) {
+                margin-top: 2rem;
+            }
         }
         &-hide {
             margin-top: -55rem;
@@ -519,6 +522,11 @@
     }
     &__form {
         padding: 2rem;
+        &-heading {
+            @include mixins.mediaQueryHeight(viewportHeight550) {
+                font-size: 2rem;
+            }
+        }
     }
     &__form-group {
         &:not(:last-child) {
@@ -534,6 +542,9 @@
         width: 100%;
         padding: 1.2rem;
         transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight550) {
+            font-size: 1.4rem;
+        }
         &::placeholder {
             color: colors.$color-group-4b;
         }
@@ -544,6 +555,11 @@
             &:invalid {
                 box-shadow: 0 .5rem 2rem rgba(colors.$color-group-2a, .4);
             }
+        }
+    }
+    &__textarea {
+        @include mixins.mediaQueryHeight(viewportHeight550) {
+            height: 5em;
         }
     }
 }
