@@ -1,0 +1,21 @@
+@use 'colors';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: colors.$color-group-4c;
+}
+html {
+    font-size: 62.5%; // 1rem
+    scroll-behavior: smooth;
+    box-sizing: border-box;      
+}

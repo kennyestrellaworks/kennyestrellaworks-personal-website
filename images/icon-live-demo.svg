@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="icon-live-demo" transform="translate(-7156 -2486)">
+    <rect id="Rectangle_1813" data-name="Rectangle 1813" width="34" height="34" transform="translate(7156 2486)" fill="red" opacity="0"/>
+    <rect id="Rectangle_1777" data-name="Rectangle 1777" width="34" height="29" transform="translate(7156 2489)" fill="#802424" opacity="0"/>
+    <path id="desktop-sharp" d="M46.961,48H17.068A1.068,1.068,0,0,0,16,49.068V70.42a1.068,1.068,0,0,0,1.068,1.068h11.21v2.135h-4.8v2.135H40.555V73.623h-4.8V71.488h11.21a1.068,1.068,0,0,0,1.068-1.068V49.068A1.068,1.068,0,0,0,46.961,48Zm-1.335,2.4V64.815H18.4V50.4ZM30.955,68.424a1.068,1.068,0,1,1,.92.92A1.068,1.068,0,0,1,30.955,68.424Z" transform="translate(7140.97 2441)"/>
+  </g>
+</svg>

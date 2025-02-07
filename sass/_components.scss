@@ -1,0 +1,582 @@
+@use 'fonts';
+@use 'colors';
+@use 'variables';
+@use 'mixins';
+
+.heading-1 {
+    font-family: fonts.$font-roboto-slab-bold;
+    font-size: 2.4rem;
+    color: colors.$color-white;
+    text-transform: uppercase;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 2.2rem;
+    }
+}
+.heading-2 {
+    font-family: fonts.$font-segoe-ui-bold;
+    font-size: 2.2rem;
+    color: colors.$color-white;
+    text-transform: uppercase;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 2rem;
+    }
+}
+.heading-3 {
+    font-family: fonts.$font-segoe-ui;
+    font-size: 1.2rem;
+    color: colors.$color-group-4b;
+    text-transform: capitalize;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1rem;
+    }
+}
+.subheading-1 {
+    font-family: fonts.$font-segoe-ui;
+    font-size: 1.8rem;
+    color: colors.$color-group-1b;
+    text-transform: capitalize;
+    font-style: italic;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1.6rem;
+    }
+}
+.heading-stylized-1 {
+    font-family: fonts.$font-roboto-slab-bold;
+    font-size: 1.2rem;
+    text-transform: capitalize; 
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1rem;
+    }
+    &__colored {
+        padding: 0 1rem;
+        color: colors.$color-white;        
+        background-image: linear-gradient(
+            to right bottom,
+            colors.$color-group-2a,
+            colors.$color-group-2b,
+        );
+        transform: skew(20deg);
+        display: inline-block; 
+    }
+    &__unskew {
+        display: inline-block;
+        transform: skew(-20deg);     
+    }
+    &__extra {
+        color: colors.$color-group-4a;
+        margin: -0.6rem 0 0 2rem;
+    }
+}
+
+.paragraph-1 {
+    font-family: fonts.$font-segoe-ui;
+    font-size: 1.4rem;
+    color: colors.$color-white;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1.2rem;
+    }
+}
+.paragraph-2 {
+    font-family: fonts.$font-segoe-ui;
+    font-size: 1.2rem;
+    color: colors.$color-group-1b;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1rem;
+    }
+    &__colored {
+        color: colors.$color-group-3a;
+        font-weight: bold;
+    }
+}
+.paragraph-3 {
+    font-family: fonts.$font-segoe-ui;
+    font-size: 1.6rem;
+    color: colors.$color-group-4a;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1000) {
+        font-size: 1.4rem;
+    }
+}
+
+.card-1 {
+    background-color: colors.$color-white;
+    display: flex;
+    flex-direction: row;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth580) {
+        flex-direction: column;
+    }
+    &__blurb {
+        height: 15rem;
+        margin-top: 2rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth580) {
+            height: 11rem;
+        }
+    }
+    &__area-1 {
+        position: relative;
+        width: 42%;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth580) {
+            width: 100%;
+            height: 24rem;
+        }        
+        &-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;                   
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(                
+                    to left bottom,
+                    rgba(colors.$color-group-3a, .2),
+                    rgba(colors.$color-group-2a, .3),
+                );
+        }          
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                -100deg,
+                colors.$color-white 0%,
+                colors.$color-white 26%,
+                transparent 0%
+            );
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth580) {
+                background-image: linear-gradient(
+                    6deg,
+                    colors.$color-white 0%,
+                    colors.$color-white 20%,
+                    transparent 0%
+                );
+            }
+        }
+    }
+    &__area-2 {
+        width: 58%;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth580) {
+            width: 100%;
+        }
+        &-wrap {
+            margin: 2rem 2rem 2rem 0;
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth580) {
+                margin: 0 2rem 2rem 2rem;
+            }
+        }
+        & .heading-stylized-1 {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth860) {
+                font-size: 1.4rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth660) {
+                font-size: 1.3rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth400) {
+                font-size: 1.2rem;
+            }
+        }
+        & .paragraph-2 {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth860) {
+                font-size: 1.4rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth660) {
+                font-size: 1.3rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth400) {
+                font-size: 1.2rem;
+            }
+        }
+        & .content__projects-items-icons-icon img {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth860) {
+                width: 3rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth660) {
+                width: 2.8rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth480) {
+                width: 2.6rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth460) {
+                width: 2.4rem;
+            }
+        }
+    }
+    &__icons {
+        margin-top: 2rem;
+    }
+}
+
+.card-2 {
+    background-color: colors.$color-white;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth590) {
+        display: flex;
+        flex-direction: row;
+    }
+    &__area-1 {
+        position: relative;        
+        height: 12.6rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth1000) {
+            height: 12.8rem;
+        }
+        @include mixins.mediaQueryWidth(viewportWidth590) {
+            height: 100%;
+            width: 40%;
+        }
+        &-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(                
+                    to left bottom,
+                    rgba(colors.$color-group-3a, .2),
+                    rgba(colors.$color-group-2a, .3),
+                );
+        }  
+    }
+    &__area-2 {
+        padding: 2rem 1.5rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth590) {
+            width: 60%;
+        }
+        &-heading .heading-3 {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth1000) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__icons {
+        margin-top: 1rem;
+        &-item {            
+            & img {
+                width: 2.5rem;
+            }
+        }
+    }
+    &__blurb {
+        margin-top: 1rem;
+        height: 12rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryWidth(viewportWidth950) {
+            height: 8rem;
+        }
+        @include mixins.mediaQueryWidth(viewportWidth860) {
+            height: 10rem;
+        }
+        @include mixins.mediaQueryWidth(viewportWidth620) {
+            height: 12rem;
+        }
+        @include mixins.mediaQueryWidth(viewportWidth460) {
+            height: 14rem;
+        }
+        @include mixins.mediaQueryWidth(viewportWidth380) {
+            height: 16rem;
+        }
+        & .paragraph-2 {
+            transition: variables.$transition-all-slowest;
+            @include mixins.mediaQueryWidth(viewportWidth950) {
+                font-size: 1.4rem;
+            }
+            @include mixins.mediaQueryWidth(viewportWidth860) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.icon-links-1 {
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.icon-grouped {
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
+.button-1 {
+    position: relative;
+    border: none;
+    background-color: colors.$color-group-3c;
+    color: colors.$color-white;
+    text-transform: uppercase;
+    padding: 1rem 2rem;    
+    &__text {
+        position: relative;
+        z-index: 300;
+        &:hover {
+            cursor: pointer;
+        }
+        &-link {
+            text-decoration: none;
+            color: colors.$color-white;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+            to left bottom,
+            rgba(colors.$color-group-2a, 1),
+            rgba(colors.$color-group-2b, 1)
+        );
+        z-index: 200;
+        opacity: 0;
+        transition: variables.$transition-all-slowest;
+    }
+    &:hover::after {
+        opacity: 1;
+        cursor: pointer;
+    }
+    &__active {
+        position: relative;
+        border: none;
+        color: colors.$color-white;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(
+            to left bottom,
+            rgba(colors.$color-group-2a, 1),
+            rgba(colors.$color-group-2b, 1)
+        );
+        &__text {
+            position: relative;
+            z-index: 300;
+            &:hover {
+                cursor: pointer;
+            }  
+        }
+    }
+}
+
+.button-2 {
+    position: relative;
+    border: none;
+    background-color: colors.$color-group-3c;    
+    text-transform: uppercase;        
+    &__text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 300;
+        text-decoration: none;
+        color: colors.$color-white;
+        width: 16rem;
+        padding: 1rem 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+            to left bottom,
+            rgba(colors.$color-group-2a, 1),
+            rgba(colors.$color-group-2b, 1)
+        );
+        z-index: 200;
+        opacity: 0;
+        transition: variables.$transition-all-slowest;
+    }
+    &:hover::after {
+        opacity: 1;
+        cursor: pointer;
+    }
+    &:not(:last-child) {
+        margin-bottom: .6rem;
+    }
+}
+
+.button-icon {
+    position: relative;
+    z-index: 300;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    fill: colors.$color-white;    
+}
+
+.button-icon-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+    &__icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: colors.$color-white;
+        transition: variables.$transition-all-slowest;
+        &:hover {
+            cursor: pointer;
+            fill: colors.$color-group-3c;
+        }
+    }
+}
+
+.button-icon-2 {
+    border: none;
+    background-color: transparent;
+    &__icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: colors.$color-white;
+        transition: variables.$transition-all-slowest;
+        &:hover {
+            cursor: pointer;
+            fill: colors.$color-group-3c;
+        }
+    }
+}
+
+.contact-form {
+    position: relative;
+    z-index: 2600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrap { 
+        position: absolute;
+        top: 0;
+        width: 48.8rem;
+        transition: variables.$transition-all-slowest;
+        &-default {
+            margin-top: 5rem;
+            @include mixins.mediaQueryHeight(viewportHeight560) {
+                margin-top: 2rem;
+            }
+        }
+        &-hide {
+            margin-top: -55rem;
+        }
+    }
+    &__heading {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__box {
+        background: colors.$color-group-4c;
+        border: 1rem solid colors.$color-group-1c;
+    }
+    &__close {
+        background: colors.$color-group-4d;
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+    &__form {
+        padding: 2rem;
+        &-heading {
+            @include mixins.mediaQueryHeight(viewportHeight550) {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__form-group {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__input {
+        border: 0;
+        font-family: fonts.$font-segoe-ui;
+        font-size: 1.6rem;
+        color: colors.$color-white;
+        background-color: colors.$color-group-4a;
+        width: 100%;
+        padding: 1.2rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight550) {
+            font-size: 1.4rem;
+        }
+        &::placeholder {
+            color: colors.$color-group-4b;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 .5rem 2rem rgba(colors.$color-white, .2);
+            transition: variables.$transition-all-slowest;
+            &:invalid {
+                box-shadow: 0 .5rem 2rem rgba(colors.$color-group-2a, .4);
+            }
+        }
+    }
+    &__textarea {
+        @include mixins.mediaQueryHeight(viewportHeight550) {
+            height: 5em;
+        }
+    }
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2500;
+    background-color: #000;
+    opacity: 0.8;    
+    &__hide {
+        width: 0;
+        height: 0;
+    }
+    &__default {
+        width: 100%;
+        height: 100vh;
+    }
+}

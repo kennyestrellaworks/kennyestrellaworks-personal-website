@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="icon-npm" transform="translate(1 9.826)">
+    <rect id="Rectangle_1826" data-name="Rectangle 1826" width="34" height="34" transform="translate(-1 -9.826)" fill="red" opacity="0"/>
+    <path id="Path_11" data-name="Path 11" d="M2135.105,10.907H2150.7V1.662h-30.036v9.245h8.255v1.98h6.188Z" transform="translate(-2119.606 -9.57)" fill="#fff"/>
+    <path id="npm-original-wordmark" d="M2,38.5H34V49.78H18v1.881H10.888V49.78H2Zm1.778,9.4H7.334V42.26H9.112V47.9H10.89v-7.52H3.778Zm8.888-7.52v9.4h3.556V47.9h3.556v-7.52Zm3.556,1.881H18V46.02H16.222Zm5.334-1.881V47.9h3.556V42.26H26.89V47.9h1.778V42.26h1.778V47.9h1.778v-7.52Z" transform="translate(-2 -47.5)" fill="#cb3837"/>
+  </g>
+</svg>
