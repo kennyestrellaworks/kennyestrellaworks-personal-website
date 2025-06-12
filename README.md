@@ -27,11 +27,3 @@ This is a home page that'll serve as my **Personal Website** this year as I go o
 ### Used tools
 
 <img width="22px" src="xd-plain.svg">
-
-### Oct 3 2023
-
-Updating resume.
-
-### Oct 18 2022
-
-Added Profile section height media query.
