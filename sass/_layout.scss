@@ -303,6 +303,7 @@
 }
 
 .icon-grouped {
+  margin-top: 1rem;
   &__item {
     & img {
       transition: variables.$transition-all-slowest;

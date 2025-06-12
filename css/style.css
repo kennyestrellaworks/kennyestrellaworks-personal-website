@@ -328,6 +328,9 @@ html {
   width: 4.2rem;
 }
 
+.icon-grouped {
+  margin-top: 1rem;
+}
 .icon-grouped__item img {
   transition: all 0.5s;
 }
