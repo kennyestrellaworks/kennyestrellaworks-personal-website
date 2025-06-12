@@ -16,16 +16,22 @@ This is a home page that'll serve as my **Personal Website** this year as I go o
 
 ![project-preview](project-preview.jpg)
 
-Live Site URL: [Live Demo](https://kennyestrellaworks-personal-website.netlify.app/)
+[Live Demo](https://kennyestrellaworks-personal-website.netlify.app/)
+
+[Source Code](https://kennyestrellaworks-personal-website.netlify.app/)
 
 ### Used technologies
+
 <img width="22px" src="html5-plain.svg"> <img width="22px" src="css3-plain.svg"> <img width="22px" src="sass-original.svg"> <img width="22px" src="javascript-original.svg"> <img width="22px" src="npm-original-wordmark.svg">
 
-###  Used tools
+### Used tools
+
 <img width="22px" src="xd-plain.svg">
 
 ### Oct 3 2023
+
 Updating resume.
 
 ### Oct 18 2022
+
 Added Profile section height media query.

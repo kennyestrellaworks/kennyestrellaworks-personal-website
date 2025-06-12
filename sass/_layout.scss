@@ -1,310 +1,314 @@
-@use 'variables';
-@use 'colors';
-@use 'mixins';
+@use "variables";
+@use "colors";
+@use "mixins";
 
 .wrap {
-    &__screen {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  &__screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__viewport {
+    width: variables.$viewport-width;
+    //background-color: aqua;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1920) {
+      width: 100%;
     }
-    &__viewport {
-        width: variables.$viewport-width;
-        //background-color: aqua;
-        transition: variables.$transition-all-slowest;
-        @include mixins.mediaQueryWidth(viewportWidth1920) {
-            width: 100%;
-        }
+  }
+  &__content {
+    position: relative;
+    max-width: variables.$content-width;
+    margin: 0 auto;
+    //background-color: tan;
+    transition: variables.$transition-all-slowest;
+    @include mixins.mediaQueryWidth(viewportWidth1400) {
+      width: 100%;
     }
-    &__content {
-        position: relative;
-        max-width:  variables.$content-width;
-        margin: 0 auto;
-        //background-color: tan;
-        transition: variables.$transition-all-slowest;
-        @include mixins.mediaQueryWidth(viewportWidth1400) {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .content {
-    // display: flex;
-    position: relative;
-    width: 100%;   
+  // display: flex;
+  position: relative;
+  width: 100%;
 
-    // Projects section.
-    &__projects {
-        width: 100%;
-        &-wrap {
-            // width: 104rem; // Controlled in JS.
-            padding: 4rem 2rem 7rem 2rem;
-            transition: variables.$transition-all-slowest;
-            @include mixins.mediaQueryWidth(viewportWidth860) {
-                padding: 4rem 10rem 7rem 10rem;
-            }
-            @include mixins.mediaQueryWidth(viewportWidth740) {
-                padding: 4rem 6rem 7rem 6rem;
-            }
-            @include mixins.mediaQueryWidth(viewportWidth660) {
-                padding: 4rem 4rem 7rem 4rem;
-            }
-            @include mixins.mediaQueryWidth(viewportWidth400) {
-                padding: 4rem 2rem 7rem 2rem;
-            }
-        }
-        &-item {
-            position: relative;
-            overflow: hidden;
-            &:hover {
-                cursor: pointer;
-            }
-            &-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: variables.$transition-all-slowest;
-                &-background,
-                &-buttons {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-                &-background {
-                    background-color: colors.$color-black;
-                    z-index: 400;
-                    opacity: .8;
-                }
-                &-buttons {
-                    z-index: 500;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-                &-hide {
-                    margin-top: -70rem;
-                }
-                &-show {
-                    margin-top: 0;
-                }
-            }
-        }        
-        &-items {
-            margin-top: 4rem;
-            &-icons {
-                &-icon {
-                    list-style-type: none;
-                    display: inline;
-                    & img {
-                        width: 2.2rem;
-                    }
-                }
-            }
-        }
-        &-items-primary-box {
-            display: grid;
-            grid-template-columns: 2fr 2fr;
-            grid-gap: 2rem;
-            transition: variables.$transition-all-slowest;
-            @include mixins.mediaQueryWidth(viewportWidth860) {
-                grid-template-columns: 1fr;
-            }
-        }
-        &-items-secondary-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 2rem;
-            margin-top: 2rem;
-            transition: variables.$transition-all-slowest;
-            @include mixins.mediaQueryWidth(viewportWidth950) {
-                grid-template-columns: 2fr 2fr;
-            }
-            @include mixins.mediaQueryWidth(viewportWidth590) {
-                grid-template-columns: 1fr;
-            }
-        }
-
-    }    
-    &__projects-heading {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &-p {
-            margin-top: 2rem;
-        }
-        &-wrap {
-            width: 52rem;
-            text-align: center;
-            transition: variables.$transition-all-slowest;
-            @include mixins.mediaQueryWidth(viewportWidth660) {
-                width: 100%;
-                padding: 0 4rem;
-            }
-            @include mixins.mediaQueryWidth(viewportWidth500) {
-                padding: 0 2rem;
-            }
-        }
+  // Projects section.
+  &__projects {
+    width: 100%;
+    &-wrap {
+      // width: 104rem; // Controlled in JS.
+      padding: 4rem 2rem 7rem 2rem;
+      transition: variables.$transition-all-slowest;
+      @include mixins.mediaQueryWidth(viewportWidth860) {
+        padding: 4rem 10rem 7rem 10rem;
+      }
+      @include mixins.mediaQueryWidth(viewportWidth740) {
+        padding: 4rem 6rem 7rem 6rem;
+      }
+      @include mixins.mediaQueryWidth(viewportWidth660) {
+        padding: 4rem 4rem 7rem 4rem;
+      }
+      @include mixins.mediaQueryWidth(viewportWidth400) {
+        padding: 4rem 2rem 7rem 2rem;
+      }
     }
-
-    // Profile section.
-    &__profile { 
-        position: relative;    
-       // display: none;   
-        &-default {
-            position: fixed;
-            top: 0;
-            z-index: 1500;
-        }             
-        // width: variables.$content-width; // Controlled in JS.
-        &-wrap {
-            position: absolute;
-            right: 0;                         
-            &-content {
-                // width: 36rem;  // Controlled in JS.                
-                background-color: colors.$color-group-4d;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                overflow: hidden;
-                transition: variables.$transition-all-slowest;           
-                &-default {
-                    padding: 2rem;
-                    height: 100vh;
-                }
-                &-hide {
-                    padding: 0;
-                    height: 0;
-                }                
-            }            
+    &-item {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        cursor: pointer;
+      }
+      &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: variables.$transition-all-slowest;
+        &-background,
+        &-buttons {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
-        &-full-name {
-            & .heading-2 {
-                transition: variables.$transition-all-slowest;
-                @include mixins.mediaQueryHeight(viewportHeight640) {
-                    font-size: 2rem;
-                }
-            }            
-        }
-        &-image {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            &-avatar {
-                border-radius: 50%;
-                display: block;
-                width: 12.8rem;
-                transition: variables.$transition-all-slowest;
-                @include mixins.mediaQueryHeight(viewportHeight700) {
-                    width: 10.8rem;
-                }
-                @include mixins.mediaQueryHeight(viewportHeight680) {
-                    width: 8.8rem;
-                }
-                @include mixins.mediaQueryHeight(viewportHeight640) {
-                    width: 6.8rem;
-                }
-            }
-        }
-        &-job-position {
-            & .subheading-1 {
-                font-size: 1.6rem;
-            }
-        }
-        &-blurb {
-            text-align: center;
-            width: 80%;
-            margin-top: 2rem;
-            & p {
-                transition: variables.$transition-all-slowest;
-                @include mixins.mediaQueryHeight(viewportHeight640) {
-                    font-size: 1.4rem;
-                }
-            }
-        }
-        &-web-technologies, &-tools-and-apps {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 2rem;
-            & .heading-2 {
-                transition: variables.$transition-all-slowest;
-                @include mixins.mediaQueryHeight(viewportHeight640) {
-                    font-size: 2rem;
-                }
-            }
+        &-background {
+          background-color: colors.$color-black;
+          z-index: 400;
+          opacity: 0.8;
         }
         &-buttons {
-            margin-top: 2rem;
-            & .button-1:not(:last-child) {
-                margin-right: .5rem;
-            }
-        }
-        &-close {
-            &-default {
-                position: relative;
-            }
-            &-hide {
-                display: none;
-            }       
-            &-button {
-                padding: 2rem;
-            }            
-        }
-        &-social-icons {
-            margin-top: .5rem;
-        }
-    }
-    // Show profile
-    &__show-profile {        
-            position: fixed;
-            z-index: 1000;
-            transition: variables.$transition-all-slowest;
-        &-default {   
-            margin-top: 0;         
+          z-index: 500;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
         &-hide {
-            margin-top: -10rem;
+          margin-top: -70rem;
         }
-        &-wrap {
-            position: absolute;
-            right: 0;
+        &-show {
+          margin-top: 0;
         }
-        &-box {
-            position: absolute;
-            background-color: colors.$color-group-4d;
-            right: 0;
-            width: 8.5rem;
-            padding: 1rem 0 1rem 1rem;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        &-block {
-            display: flex;
-            flex-direction: row;
-        }
-        &-area-1 {
-            & .content__profile-image-avatar {
-                width: 4.2rem;
-            }            
-        }        
+      }
     }
+    &-items {
+      margin-top: 4rem;
+      &-icons {
+        &-icon {
+          list-style-type: none;
+          display: inline;
+          & img {
+            width: 2.2rem;
+          }
+        }
+      }
+      &-secondary {
+        margin-top: 6rem;
+      }
+    }
+    &-items-primary-box {
+      //   margin-top: 6rem;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-gap: 2rem;
+      transition: variables.$transition-all-slowest;
+      @include mixins.mediaQueryWidth(viewportWidth860) {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-items-secondary-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 2rem;
+      margin-top: 4rem;
+      transition: variables.$transition-all-slowest;
+      @include mixins.mediaQueryWidth(viewportWidth950) {
+        grid-template-columns: 2fr 2fr;
+      }
+      @include mixins.mediaQueryWidth(viewportWidth590) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  &__projects-heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-p {
+      margin-top: 2rem;
+    }
+    &-wrap {
+      width: 52rem;
+      text-align: center;
+      transition: variables.$transition-all-slowest;
+      @include mixins.mediaQueryWidth(viewportWidth660) {
+        width: 100%;
+        padding: 0 4rem;
+      }
+      @include mixins.mediaQueryWidth(viewportWidth500) {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  // Profile section.
+  &__profile {
+    position: relative;
+    // display: none;
+    &-default {
+      position: fixed;
+      top: 0;
+      z-index: 1500;
+    }
+    // width: variables.$content-width; // Controlled in JS.
+    &-wrap {
+      position: absolute;
+      right: 0;
+      &-content {
+        // width: 36rem;  // Controlled in JS.
+        background-color: colors.$color-group-4d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: variables.$transition-all-slowest;
+        &-default {
+          padding: 2rem;
+          height: 100vh;
+        }
+        &-hide {
+          padding: 0;
+          height: 0;
+        }
+      }
+    }
+    &-full-name {
+      & .heading-2 {
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight640) {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &-avatar {
+        border-radius: 50%;
+        display: block;
+        width: 12.8rem;
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight700) {
+          width: 10.8rem;
+        }
+        @include mixins.mediaQueryHeight(viewportHeight680) {
+          width: 8.8rem;
+        }
+        @include mixins.mediaQueryHeight(viewportHeight640) {
+          width: 6.8rem;
+        }
+      }
+    }
+    &-job-position {
+      & .subheading-1 {
+        font-size: 1.6rem;
+      }
+    }
+    &-blurb {
+      text-align: center;
+      width: 80%;
+      margin-top: 2rem;
+      & p {
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight640) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &-web-technologies,
+    &-tools-and-apps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      & .heading-2 {
+        transition: variables.$transition-all-slowest;
+        @include mixins.mediaQueryHeight(viewportHeight640) {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-buttons {
+      margin-top: 2rem;
+      & .button-1:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+    &-close {
+      &-default {
+        position: relative;
+      }
+      &-hide {
+        display: none;
+      }
+      &-button {
+        padding: 2rem;
+      }
+    }
+    &-social-icons {
+      margin-top: 0.5rem;
+    }
+  }
+  // Show profile
+  &__show-profile {
+    position: fixed;
+    z-index: 1000;
+    transition: variables.$transition-all-slowest;
+    &-default {
+      margin-top: 0;
+    }
+    &-hide {
+      margin-top: -10rem;
+    }
+    &-wrap {
+      position: absolute;
+      right: 0;
+    }
+    &-box {
+      position: absolute;
+      background-color: colors.$color-group-4d;
+      right: 0;
+      width: 8.5rem;
+      padding: 1rem 0 1rem 1rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-block {
+      display: flex;
+      flex-direction: row;
+    }
+    &-area-1 {
+      & .content__profile-image-avatar {
+        width: 4.2rem;
+      }
+    }
+  }
 }
 
 .icon-grouped {
-    &__item {
-        & img {
-            transition: variables.$transition-all-slowest;
-            @include mixins.mediaQueryHeight(viewportHeight680) {
-                width: 3rem;
-            }         
-        }
+  &__item {
+    & img {
+      transition: variables.$transition-all-slowest;
+      @include mixins.mediaQueryHeight(viewportHeight680) {
+        width: 3rem;
+      }
     }
+  }
 }

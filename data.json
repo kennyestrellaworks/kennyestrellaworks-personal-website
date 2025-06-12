@@ -1,156 +1,243 @@
 {
-    "projects": [
-        {
-            "sys": { "id": "ngueh95842"},
-            "fields": {
-                "headingColored": "products to cart",
-                "headingExtra": "e-commerce page",
-                "category": "featured",
-                "blurb": "<p class=\"paragraph-2\">This is an <span class=\"paragraph-2__colored\">E-commerce</span> front-end page project where we can add items to the cart. The activities done in this page is stored in LocalStorage. By far, the most complex but fun project I did. I used <span class=\"paragraph-2__colored\">Contentful</span> for the data but at first, it was just a static JSON file.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/ngueh95842-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-photoshop", "adobe-xd"],
-                "liveDemo": "https://kennyestrellaworks-products-to-cart.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/products-to-cart"
+  "projects": [
+    {
+      "sys": { "id": "gndie92648" },
+      "fields": {
+        "headingColored": "vegeburg template",
+        "headingExtra": "vegan website theme",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\"><span class=\"paragraph-2__colored\">VegeBurg</span>, is a sleek and responsive web template designed specifically for vegetarian, and health food cafes, or any establishment promoting a plant-based lifestyle. Built with <span class=\"paragraph-2__colored\">React</span> for dynamic user interfaces and styled with <span class=\"paragraph-2__colored\">Sass</span> for efficient and organized CSS. This was one of those templates I did for a client at Upwork.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/gndie92648-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "schuej23054"},
-            "fields": {
-                "headingColored": "dice game me",
-                "headingExtra": "JavaScript game",
-                "category": "featured",
-                "blurb": "<p class=\"paragraph-2\">This is a mini-project based on the <span class=\"paragraph-2__colored\">Pig Game</span> in which two players roll the die to reach a winning score which is by default 100. But in this project, the players has the option to play 1 or 2 die, and, select the winning score. More details are shown at the repository.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/schuej23054-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-photoshop", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-dice-game-vanilla-javascript.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/dice-game-vanilla-javascript"
+        "icons": [
+          "react",
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "figma"
+        ],
+        "liveDemo": "https://vegeburg.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/vegeburg"
+      }
+    },
+    {
+      "sys": { "id": "xsofr26715" },
+      "fields": {
+        "headingColored": "kenstore e-commerce",
+        "headingExtra": "frontend product and cart",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\">This project was developed as part of a freelance engagement on <span class=\"paragraph-2__colored\">Upwork</span>, where I was tasked with creating the Products and Cart pages using a local JSON file as the data source. The focus was on building a clean, responsive UI while ensuring smooth data handling and user interaction.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/xsofr26715-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "cbefz83637"},
-            "fields": {
-                "headingColored": "easybank landing page",
-                "headingExtra": "frontendmentor",
-                "category": "featured",
-                "blurb": "<p class=\"paragraph-2\">I participated in one of <span class=\"paragraph-2__colored\">Frontend Mentor</span> challenges, the <span class=\"paragraph-2__colored\">Easybank Landing Page</span> challenge. I plan on participating more in the future.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/cbefz83637-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm"],
-                "liveDemo": "https://kennyestrella-easybank-frontendmentor.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/easybank-frontendmentor"
+        "icons": [
+          "react",
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "figma"
+        ],
+        "liveDemo": "https://kenstore.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/kenstore-ecommerce-frontend"
+      }
+    },
+    {
+      "sys": { "id": "cbefz83637" },
+      "fields": {
+        "headingColored": "easybank landing page",
+        "headingExtra": "frontendmentor",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\">I participated in one of <span class=\"paragraph-2__colored\">Frontend Mentor</span> challenges, the <span class=\"paragraph-2__colored\">Easybank Landing Page</span> challenge. I plan on participating more in the future.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/cbefz83637-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "logjd52538"},
-            "fields": {
-                "headingColored": "eat and travel",
-                "headingExtra": "home page theme",
-                "category": "featured",
-                "blurb": "<p class=\"paragraph-2\">A responsive, clean and modern website theme created from design to coding. This was made after finishing the <span class=\"paragraph-2__colored\">Advanced CSS and Sass: Flexbox, Grid, Animations and More! Udemy</span> course by <span class=\"paragraph-2__colored\">Jonas Schmedtmann</span>.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/logjd52538-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "npm", "adobe-photoshop", "adobe-illustrator", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-eat-and-travel.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/eat-and-travel"
+        "icons": ["react", "html5", "css3", "sass", "javascript", "npm"],
+        "liveDemo": "https://easybank-reactjs.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/easybank-reactjs"
+      }
+    },
+    {
+      "sys": { "id": "ngueh95842" },
+      "fields": {
+        "headingColored": "products to cart",
+        "headingExtra": "e-commerce page",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\">This is an <span class=\"paragraph-2__colored\">E-commerce</span> front-end page project where we can add items to the cart. The activities done in this page is stored in LocalStorage. By far, the most complex but fun project I did. I used <span class=\"paragraph-2__colored\">Contentful</span> for the data but at first, it was just a static JSON file.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/ngueh95842-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "nxcdf95475"},
-            "fields": {
-                "headingColored": "testimonial component",
-                "headingExtra": "",
-                "category": "secondary",
-                "blurb": "<p class=\"paragraph-2\">A dynamic and responsive testimonial component where we can slide right or left and we remain to the current slide upon browser resize.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/nxcdf95475-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-photoshop", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-testimonial-carousel.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/testimonial-carousel-2022"
+        "icons": [
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "adobe-photoshop",
+          "adobe-xd"
+        ],
+        "liveDemo": "https://kennyestrellaworks-products-to-cart.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/products-to-cart"
+      }
+    },
+    {
+      "sys": { "id": "schuej23054" },
+      "fields": {
+        "headingColored": "dice game me",
+        "headingExtra": "JavaScript game",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\">This is a mini-project based on the <span class=\"paragraph-2__colored\">Pig Game</span> in which two players roll the die to reach a winning score which is by default 100. But in this project, the players has the option to play 1 or 2 die, and, select the winning score. More details are shown at the repository.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/schuej23054-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "ociej85412"},
-            "fields": {
-                "headingColored": "accordion component",
-                "headingExtra": "",
-                "category": "secondary",
-                "blurb": "<p class=\"paragraph-2\">An accordion component done using margin-top to expand it's content.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/ociej85412-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-accordion-component.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/snippets-accordion-component"
+        "icons": [
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "adobe-photoshop",
+          "adobe-xd"
+        ],
+        "liveDemo": "https://kennyestrella-dice-game-vanilla-javascript.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/dice-game-vanilla-javascript"
+      }
+    },
+
+    {
+      "sys": { "id": "logjd52538" },
+      "fields": {
+        "headingColored": "eat and travel",
+        "headingExtra": "home page theme",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\">A responsive, clean and modern website theme created from design to coding. This was made after finishing the <span class=\"paragraph-2__colored\">Advanced CSS and Sass: Flexbox, Grid, Animations and More! Udemy</span> course by <span class=\"paragraph-2__colored\">Jonas Schmedtmann</span>.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/logjd52538-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "crhdy98342"},
-            "fields": {
-                "headingColored": "navmenu component",
-                "headingExtra": "",
-                "category": "secondary",
-                "blurb": "<p class=\"paragraph-2\">A dynamic and responsive navmenu component. This was added to the Products to Cart E-commerce project.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/crhdy98342-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-navmenu-component.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/kennyestrellaworks-navmenu-component"
+        "icons": [
+          "html5",
+          "css3",
+          "sass",
+          "npm",
+          "adobe-photoshop",
+          "adobe-illustrator",
+          "adobe-xd"
+        ],
+        "liveDemo": "https://kennyestrella-eat-and-travel.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/eat-and-travel"
+      }
+    },
+    {
+      "sys": { "id": "nxcdf95475" },
+      "fields": {
+        "headingColored": "testimonial component",
+        "headingExtra": "",
+        "category": "secondary",
+        "blurb": "<p class=\"paragraph-2\">A dynamic and responsive testimonial component where we can slide right or left and we remain to the current slide upon browser resize.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/nxcdf95475-img.jpg"
             }
+          }
         },
-        {
-            "sys": { "id": "fjycd75358"},
-            "fields": {
-                "headingColored": "person details listing",
-                "headingExtra": "",
-                "category": "secondary",
-                "blurb": "<p class=\"paragraph-2\">A mini-project where the details of a person is displayed at the page. Then we can view the whole content using the arrow down button.</p>",
-                "image": {
-                    "fields": {
-                        "file": {
-                            "imageUrl": "images/fjycd75358-img.jpg"
-                        }
-                    }
-                },
-                "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
-                "liveDemo": "https://kennyestrella-person-details-listing.netlify.app/",
-                "sourceCode": "https://github.com/kennyestrellaworks/person-details-listing"
+        "icons": [
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "adobe-photoshop",
+          "adobe-xd"
+        ],
+        "liveDemo": "https://kennyestrella-testimonial-carousel.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/testimonial-carousel-2022"
+      }
+    },
+    {
+      "sys": { "id": "ociej85412" },
+      "fields": {
+        "headingColored": "accordion component",
+        "headingExtra": "",
+        "category": "secondary",
+        "blurb": "<p class=\"paragraph-2\">An accordion component done using margin-top to expand it's content.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/ociej85412-img.jpg"
             }
-        }
-    ]
+          }
+        },
+        "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
+        "liveDemo": "https://kennyestrella-accordion-component.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/snippets-accordion-component"
+      }
+    },
+    {
+      "sys": { "id": "crhdy98342" },
+      "fields": {
+        "headingColored": "navmenu component",
+        "headingExtra": "",
+        "category": "secondary",
+        "blurb": "<p class=\"paragraph-2\">A dynamic and responsive navmenu component. This was added to the Products to Cart E-commerce project.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/crhdy98342-img.jpg"
+            }
+          }
+        },
+        "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
+        "liveDemo": "https://kennyestrella-navmenu-component.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/kennyestrellaworks-navmenu-component"
+      }
+    },
+    {
+      "sys": { "id": "fjycd75358" },
+      "fields": {
+        "headingColored": "person details listing",
+        "headingExtra": "",
+        "category": "secondary",
+        "blurb": "<p class=\"paragraph-2\">A mini-project where the details of a person is displayed at the page. Then we can view the whole content using the arrow down button.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/fjycd75358-img.jpg"
+            }
+          }
+        },
+        "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
+        "liveDemo": "https://kennyestrella-person-details-listing.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/person-details-listing"
+      }
+    }
+  ]
 }
