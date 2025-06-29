@@ -144,7 +144,7 @@ html {
 }
 .content__projects-items-secondary-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   margin-top: 4rem;
   transition: all 0.5s;
@@ -693,12 +693,12 @@ html {
 }
 .card-2__blurb {
   margin-top: 1rem;
-  height: 12rem;
+  height: 17rem;
   transition: all 0.5s;
 }
 @media only screen and (max-width: 59.375em) {
   .card-2__blurb {
-    height: 8rem;
+    height: 12rem;
   }
 }
 @media only screen and (max-width: 53.75em) {

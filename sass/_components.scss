@@ -294,10 +294,10 @@
   }
   &__blurb {
     margin-top: 1rem;
-    height: 12rem;
+    height: 17rem;
     transition: variables.$transition-all-slowest;
     @include mixins.mediaQueryWidth(viewportWidth950) {
-      height: 8rem;
+      height: 12rem;
     }
     @include mixins.mediaQueryWidth(viewportWidth860) {
       height: 10rem;

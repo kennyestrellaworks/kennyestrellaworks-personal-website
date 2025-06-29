@@ -74,32 +74,32 @@
       }
     },
     {
-      "sys": { "id": "ngueh95842" },
+      "sys": { "id": "mneid98135" },
       "fields": {
-        "headingColored": "products to cart",
-        "headingExtra": "e-commerce page",
+        "headingColored": "Design Pro Dashboard",
+        "headingExtra": "Modern Responsive UI",
         "category": "featured",
-        "blurb": "<p class=\"paragraph-2\">This is an <span class=\"paragraph-2__colored\">E-commerce</span> front-end page project where we can add items to the cart. The activities done in this page is stored in LocalStorage. By far, the most complex but fun project I did. I used <span class=\"paragraph-2__colored\">Contentful</span> for the data but at first, it was just a static JSON file.</p>",
+        "blurb": "<p class=\"paragraph-2\">This project was based from a dashboard web app project I did for my client. I had to recreate this to refresh myself in using <span class=\"paragraph-2__colored\">React</span> with <span class=\"paragraph-2__colored\">Tailwind CSS.</span> </p>",
         "image": {
           "fields": {
             "file": {
-              "imageUrl": "images/ngueh95842-img.jpg"
+              "imageUrl": "images/mneid98135-img.jpg"
             }
           }
         },
         "icons": [
-          "html5",
-          "css3",
-          "sass",
+          "react",
           "javascript",
+          "html5",
           "npm",
-          "adobe-photoshop",
-          "adobe-xd"
+          "tailwindcss",
+          "figma"
         ],
-        "liveDemo": "https://kennyestrellaworks-products-to-cart.netlify.app/",
-        "sourceCode": "https://github.com/kennyestrellaworks/products-to-cart"
+        "liveDemo": "https://design-pro-dashboard.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/design-po-dashboard/"
       }
     },
+
     {
       "sys": { "id": "schuej23054" },
       "fields": {
@@ -153,6 +153,33 @@
         ],
         "liveDemo": "https://kennyestrella-eat-and-travel.netlify.app/",
         "sourceCode": "https://github.com/kennyestrellaworks/eat-and-travel"
+      }
+    },
+    {
+      "sys": { "id": "ngueh95842" },
+      "fields": {
+        "headingColored": "products to cart",
+        "headingExtra": "e-commerce page",
+        "category": "secondary",
+        "blurb": "<p class=\"paragraph-2\">This is an <span class=\"paragraph-2__colored\">E-commerce</span> front-end page project where we can add items to the cart. The activities done in this page is stored in LocalStorage. By far, the most complex but fun project I did. I used <span class=\"paragraph-2__colored\">Contentful</span> for the data but at first, it was just a static JSON file.</p>",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/ngueh95842-img.jpg"
+            }
+          }
+        },
+        "icons": [
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm",
+          "adobe-photoshop",
+          "adobe-xd"
+        ],
+        "liveDemo": "https://kennyestrellaworks-products-to-cart.netlify.app/",
+        "sourceCode": "https://github.com/kennyestrellaworks/products-to-cart"
       }
     },
     {
