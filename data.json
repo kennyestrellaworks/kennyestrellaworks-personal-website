@@ -95,7 +95,7 @@
           "tailwindcss",
           "figma"
         ],
-        "liveDemo": "https://design-pro-dashboard.netlify.app/",
+        "liveDemo": "https://design-po-dashboard.vercel.app/",
         "sourceCode": "https://github.com/kennyestrellaworks/design-po-dashboard/"
       }
     },
