@@ -16,6 +16,7 @@
         },
         "icons": [
           "react",
+          "typescript",
           "html5",
           "css3",
           "sass",
