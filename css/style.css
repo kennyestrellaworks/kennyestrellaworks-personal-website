@@ -229,7 +229,7 @@ html {
 .content__profile-image-avatar {
   border-radius: 50%;
   display: block;
-  width: 12.8rem;
+  width: 8rem;
   transition: all 0.5s;
 }
 @media only screen and (max-height: 43.75em) {
