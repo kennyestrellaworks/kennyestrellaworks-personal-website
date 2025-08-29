@@ -581,3 +581,13 @@
     height: 100vh;
   }
 }
+
+.profile-footer {
+  margin-top: 2rem;
+  background-color: #192539;
+
+  text-align: center;
+  &__wrap {
+    padding: 1rem;
+  }
+}

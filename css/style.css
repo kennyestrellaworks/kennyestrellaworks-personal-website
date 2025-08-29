@@ -979,4 +979,13 @@ html {
   height: 100vh;
 }
 
+.profile-footer {
+  margin-top: 2rem;
+  background-color: #192539;
+  text-align: center;
+}
+.profile-footer__wrap {
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
