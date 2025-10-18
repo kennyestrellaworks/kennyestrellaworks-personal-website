@@ -197,13 +197,20 @@ html {
   position: absolute;
   right: 0;
 }
+@media only screen and (max-width: 79.375em) {
+  .content__profile-wrap {
+    right: 1.5rem;
+  }
+}
 .content__profile-wrap-content {
   background-color: #223046;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow-y: auto;
   transition: all 0.5s;
+  scrollbar-width: thin;
+  scrollbar-color: #223046 #466592;
 }
 .content__profile-wrap-content-default {
   padding: 2rem;
@@ -212,6 +219,14 @@ html {
 .content__profile-wrap-content-hide {
   padding: 0;
   height: 0;
+}
+.content__profile-wrap-content::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 6px;
+}
+.content__profile-wrap-content::-webkit-scrollbar-track {
+  background: #ede9fe;
+  border-radius: 6px;
 }
 .content__profile-full-name .heading-2 {
   transition: all 0.5s;
