@@ -441,11 +441,12 @@ html {
   }
 }
 .heading-stylized-1__colored {
-  padding: 0 1rem;
+  padding: 0.5rem 2rem;
   color: #ffffff;
-  background-image: linear-gradient(to right bottom, #F2791C, #F2BF16);
   transform: skew(20deg);
   display: inline-block;
+  line-height: 2.6rem;
+  background-image: linear-gradient(to right bottom, #F2791C, #F2BF16);
 }
 .heading-stylized-1__unskew {
   display: inline-block;
@@ -453,7 +454,8 @@ html {
 }
 .heading-stylized-1__extra {
   color: #6990C9;
-  margin: -0.6rem 0 0 2rem;
+  margin: 1.2rem 0 0 2rem;
+  line-height: 2.6rem;
 }
 
 .paragraph-1 {
