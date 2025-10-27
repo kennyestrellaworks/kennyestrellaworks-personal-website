@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "sys": { "id": "mvder31875-img" },
+      "fields": {
+        "headingColored": "snagzy api",
+        "headingExtra": "read-only REST-style HTTP API",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\"><span class=\"paragraph-2__colored\">Snazy API</span>, Deployed to both <span class=\"paragraph-2__colored\">Render</span> and <span class=\"paragraph-2__colored\">Railway</span> on their free tiers. Free tiers often have limitations such as limited concurrency, rate limits, and periodic sleeping of inactive services. Static data are seeded to <span class=\"paragraph-2__colored\">MongoDB</span> using <span class=\"paragraph-2__colored\">Express</span> and <span class=\"paragraph-2__colored\">Node</span>.",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/mvder31875-img.jpg"
+            }
+          }
+        },
+        "icons": ["javascript", "nodejs", "mongodb", "express"],
+        "liveDemo": "https://snagzy-api-production.up.railway.app/api/v1/orders/",
+        "sourceCode": "https://github.com/kennyestrellaworks/snagzy-api"
+      }
+    },
+    {
       "sys": { "id": "onfxj15964" },
       "fields": {
         "headingColored": "caldwell boat",

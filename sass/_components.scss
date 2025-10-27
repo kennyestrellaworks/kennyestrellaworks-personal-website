@@ -53,15 +53,16 @@
     font-size: 1rem;
   }
   &__colored {
-    padding: 0 1rem;
+    padding: 0.5rem 2rem;
     color: colors.$color-white;
+    transform: skew(20deg);
+    display: inline-block;
+    line-height: 2.6rem;
     background-image: linear-gradient(
       to right bottom,
       colors.$color-group-2a,
       colors.$color-group-2b
     );
-    transform: skew(20deg);
-    display: inline-block;
   }
   &__unskew {
     display: inline-block;
@@ -69,7 +70,8 @@
   }
   &__extra {
     color: colors.$color-group-4a;
-    margin: -0.6rem 0 0 2rem;
+    margin: 1.2rem 0 0 2rem;
+    line-height: 2.6rem;
   }
 }
 

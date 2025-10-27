@@ -197,13 +197,20 @@ html {
   position: absolute;
   right: 0;
 }
+@media only screen and (max-width: 79.375em) {
+  .content__profile-wrap {
+    right: 1.5rem;
+  }
+}
 .content__profile-wrap-content {
   background-color: #223046;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow-y: auto;
   transition: all 0.5s;
+  scrollbar-width: thin;
+  scrollbar-color: #223046 #466592;
 }
 .content__profile-wrap-content-default {
   padding: 2rem;
@@ -212,6 +219,14 @@ html {
 .content__profile-wrap-content-hide {
   padding: 0;
   height: 0;
+}
+.content__profile-wrap-content::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 6px;
+}
+.content__profile-wrap-content::-webkit-scrollbar-track {
+  background: #ede9fe;
+  border-radius: 6px;
 }
 .content__profile-full-name .heading-2 {
   transition: all 0.5s;
@@ -426,11 +441,12 @@ html {
   }
 }
 .heading-stylized-1__colored {
-  padding: 0 1rem;
+  padding: 0.5rem 2rem;
   color: #ffffff;
-  background-image: linear-gradient(to right bottom, #F2791C, #F2BF16);
   transform: skew(20deg);
   display: inline-block;
+  line-height: 2.6rem;
+  background-image: linear-gradient(to right bottom, #F2791C, #F2BF16);
 }
 .heading-stylized-1__unskew {
   display: inline-block;
@@ -438,7 +454,8 @@ html {
 }
 .heading-stylized-1__extra {
   color: #6990C9;
-  margin: -0.6rem 0 0 2rem;
+  margin: 1.2rem 0 0 2rem;
+  line-height: 2.6rem;
 }
 
 .paragraph-1 {
