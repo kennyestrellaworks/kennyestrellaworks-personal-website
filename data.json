@@ -34,7 +34,7 @@
           }
         },
         "icons": ["javascript", "nodejs", "mongodb", "express"],
-        "liveDemo": "https://snagzy-api-production.up.railway.app/api/v1/orders/",
+        "liveDemo": "https://snagzy-api.onrender.com/api/v1/orders/",
         "sourceCode": "https://github.com/kennyestrellaworks/snagzy-api"
       }
     },
