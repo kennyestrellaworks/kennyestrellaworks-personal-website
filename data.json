@@ -16,6 +16,7 @@
         },
         "icons": ["react", "javascript"],
         "liveDemo": "https://content-ninja-ai-app.vercel.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/content-ninja-ai-app"
       }
     },
@@ -35,6 +36,7 @@
         },
         "icons": ["javascript", "nodejs", "mongodb", "express"],
         "liveDemo": "https://snagzy-api.onrender.com/api/v1/orders/",
+        "videoDemo": "https://youtu.be/5gtnWbEXHXQ",
         "sourceCode": "https://github.com/kennyestrellaworks/snagzy-api"
       }
     },
@@ -63,6 +65,7 @@
           "figma"
         ],
         "liveDemo": "https://caldwell-boats.vercel.app",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/caldwell-boats"
       }
     },
@@ -90,6 +93,7 @@
           "figma"
         ],
         "liveDemo": "https://vegeburg.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/vegeburg"
       }
     },
@@ -117,6 +121,7 @@
           "figma"
         ],
         "liveDemo": "https://kenstore.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/kenstore-ecommerce-frontend"
       }
     },
@@ -136,6 +141,7 @@
         },
         "icons": ["react", "html5", "css3", "sass", "javascript", "npm"],
         "liveDemo": "https://easybank-reactjs.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/easybank-reactjs"
       }
     },
@@ -162,6 +168,7 @@
           "figma"
         ],
         "liveDemo": "https://design-po-dashboard.vercel.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/design-po-dashboard/"
       }
     },
@@ -190,6 +197,7 @@
           "adobe-xd"
         ],
         "liveDemo": "https://kennyestrella-dice-game-vanilla-javascript.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/dice-game-vanilla-javascript"
       }
     },
@@ -218,6 +226,7 @@
           "adobe-xd"
         ],
         "liveDemo": "https://kennyestrella-eat-and-travel.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/eat-and-travel"
       }
     },
@@ -245,6 +254,7 @@
           "adobe-xd"
         ],
         "liveDemo": "https://kennyestrellaworks-products-to-cart.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/products-to-cart"
       }
     },
@@ -272,6 +282,7 @@
           "adobe-xd"
         ],
         "liveDemo": "https://kennyestrella-testimonial-carousel.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/testimonial-carousel-2022"
       }
     },
@@ -291,6 +302,7 @@
         },
         "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
         "liveDemo": "https://kennyestrella-accordion-component.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/snippets-accordion-component"
       }
     },
@@ -310,6 +322,7 @@
         },
         "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
         "liveDemo": "https://kennyestrella-navmenu-component.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/kennyestrellaworks-navmenu-component"
       }
     },
@@ -329,6 +342,7 @@
         },
         "icons": ["html5", "css3", "sass", "javascript", "npm", "adobe-xd"],
         "liveDemo": "https://kennyestrella-person-details-listing.netlify.app/",
+        "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/person-details-listing"
       }
     }
