@@ -16,7 +16,7 @@ This is a home page that'll serve as my **Personal Website** this year as I go o
 
 ![project-preview](project-preview.jpg)
 
-[Live Demo](https://kennyestrellaworks-personal-website.netlify.app/)
+[Live Demo](https://kennyestrellaworks.netlify.app/)
 
 [Source Code](https://kennyestrellaworks-personal-website.netlify.app/)
 
