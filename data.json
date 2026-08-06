@@ -1,6 +1,33 @@
 {
   "projects": [
     {
+      "sys": { "id": "zswnj61273-img" },
+      "fields": {
+        "headingColored": "Tran The Art",
+        "headingExtra": "Fine Art Contemporary Vietnamese",
+        "category": "featured",
+        "blurb": "<p class=\"paragraph-2\"><span class=\"paragraph-2__colored\">Tran The Art</span> is a website made for an artist in Vietnam, <span class=\"paragraph-2__colored\">Trần Nguyên Thế</span>. Built with <span class=\"paragraph-2__colored\">React</span>, <span class=\"paragraph-2__colored\">TailwindCSS</span>, for the frontend, then <span class=\"paragraph-2__colored\">Express</span>, <span class=\"paragraph-2__colored\">MongoDB</span>, and <span class=\"paragraph-2__colored\">Brevo</span> for contact form submission. The website showcases well-crafted <span class=\"paragraph-2__colored\">Oil</span> and <span class=\"paragraph-2__colored\">Lacquer</span> paintings",
+        "image": {
+          "fields": {
+            "file": {
+              "imageUrl": "images/zswnj61273-img.jpg"
+            }
+          }
+        },
+        "icons": [
+          "react",
+          "tailwindcss",
+          "javascript",
+          "nodejs",
+          "mongodb",
+          "express"
+        ],
+        "liveDemo": "https://trantheart.vercel.app/",
+        "videoDemo": "https://youtu.be/Tx0b8yxZMco",
+        "sourceCode": ""
+      }
+    },
+    {
       "sys": { "id": "nfirh43276-img" },
       "fields": {
         "headingColored": "Content Ninja",
@@ -14,7 +41,7 @@
             }
           }
         },
-        "icons": ["react", "javascript"],
+        "icons": ["react", "tailwindcss", "javascript"],
         "liveDemo": "https://content-ninja-ai-app.vercel.app/",
         "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/content-ninja-ai-app"
@@ -56,6 +83,7 @@
         },
         "icons": [
           "react",
+          "tailwindcss",
           "typescript",
           "html5",
           "css3",
@@ -85,6 +113,7 @@
         },
         "icons": [
           "react",
+          "tailwindcss",
           "html5",
           "css3",
           "sass",
@@ -113,6 +142,7 @@
         },
         "icons": [
           "react",
+          "tailwindcss",
           "html5",
           "css3",
           "sass",
@@ -139,7 +169,15 @@
             }
           }
         },
-        "icons": ["react", "html5", "css3", "sass", "javascript", "npm"],
+        "icons": [
+          "react",
+          "tailwindcss",
+          "html5",
+          "css3",
+          "sass",
+          "javascript",
+          "npm"
+        ],
         "liveDemo": "https://easybank-reactjs.netlify.app/",
         "videoDemo": "",
         "sourceCode": "https://github.com/kennyestrellaworks/easybank-reactjs"
@@ -161,6 +199,7 @@
         },
         "icons": [
           "react",
+          "tailwindcss",
           "javascript",
           "html5",
           "npm",
