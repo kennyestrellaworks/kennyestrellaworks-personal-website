@@ -75,7 +75,9 @@ class UI {
                 <div class="card-1 content__projects-item" data-id="${data[i].id}">
                     <div class="content__projects-item-overlay content__projects-item-overlay-hide">
                         <div class="content__projects-item-overlay-buttons">
-                            <button class="button-2">                                                          
+                        ${
+                          data[i].sourceCode
+                            ? `<button class="button-2">                                                          
                                 <a class="button-2__text" href="${data[i].sourceCode}" target="_blank">
                                     <svg class="button-icon button-icon__source-code" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                         <g id="icon-source-code" transform="translate(-7206 -2477)">
@@ -92,8 +94,12 @@ class UI {
                                     </svg>
                                     source code
                                 </a>
-                            </button>
-                            <button class="button-2">                                                    
+                            </button>`
+                            : ``
+                        }                            
+                            ${
+                              data[i].liveDemo
+                                ? `<button class="button-2">                                                    
                                 <a class="button-2__text" href="${data[i].liveDemo}" target="_blank">
                                     <svg class="button-icon button-icon__live-demo" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                         <g id="icon-live-demo" transform="translate(-7156 -2486)">
@@ -104,7 +110,9 @@ class UI {
                                     </svg>
                                     live demo
                                 </a>
-                            </button>
+                            </button>`
+                                : ``
+                            }                            
                             ${
                               data[i].videoDemo
                                 ? `
