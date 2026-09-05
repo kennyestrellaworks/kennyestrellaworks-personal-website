@@ -1,29 +1,16 @@
-## Personal Website
+# React + Vite
 
-This is a home page that'll serve as my **Personal Website** this year as I go out there and apply for jobs related to **Front-end Development**. Purely designed and coded from scratch. Learned many things from this project especially in realizing that we can use **window.innerWidth** in **resize event** to make the layout responsive.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-### Packages Used
+Currently, two official plugins are available:
 
-1. sass
-2. live-server
-3. autoprefixer
-4. postcss
-5. postcss-cli
-6. npm-run-all
-7. uglifycss
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Project Screenshot
+## React Compiler
 
-![project-preview](project-preview.jpg)
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-[Live Demo](https://kennyestrellaworks.netlify.app/)
+## Expanding the Oxlint configuration
 
-[Source Code](https://kennyestrellaworks-personal-website.netlify.app/)
-
-### Used technologies
-
-<img width="22px" src="html5-plain.svg"> <img width="22px" src="css3-plain.svg"> <img width="22px" src="sass-original.svg"> <img width="22px" src="javascript-original.svg"> <img width="22px" src="npm-original-wordmark.svg">
-
-### Used tools
-
-<img width="22px" src="xd-plain.svg">
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
